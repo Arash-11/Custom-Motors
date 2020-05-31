@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+:root {
+  font-size: 16px;
+}
+
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #0cbaba;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.body-img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  z-index: -1;
+}
+
+h3 {
+  color: white;
+}
+
+/******************** NAVIGATION BAR ********************/
+
+.navbar {
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 44%);
+}
+
+.trademark-icon {
+  transform: scale(0.7);
+}
+
+.nav-item {
+  text-align: center;
+  margin: 0.1rem 1rem 0.1rem 0;
+  font-size: 1.2rem;
+}
+.navbar-brand {
+  margin-left: 1rem;
+}
+.navbar-brand, .nav-link {
+  color: white !important;
+  font-weight: bold !important;
+}
+.navbar-toggler {
+  border-radius: 15% !important;
+  border: solid 1px !important;
+  outline: none !important;
+}
+
+
+/******************** WELCOME PAGE ********************/
+
+#welcome-page {
+  padding: 2%;
+  text-align: center;
+  color: white;
+  height: 97vh;
+  width: 100%;
+}
+.welcome-page-heading {
+  width: 100%;
+  height: 30%;
+  margin-top: 7%;
+}
+
+.welcome-page-heading h1 {
+  color: #00e0ff;
+  font-size: 4rem;
+  font-family: 'Righteous', cursive;
+}
+
+.welcome-page-heading h3 {
+  margin-top: 2%;
+  color: #00e0ff;
+  font-size: 2rem;
+  font-family: 'Marck Script', cursive;
+}
+.welcome-page-subheading {
+  width: 100%;
+  height: 30%;
+  margin-top: 16%;
+}
+.welcome-page-subheading p {
+  font-size: 1.4rem;
+}
+.fa-chevron-down {
+  animation: moving-arrow 1.5s infinite;
+}
+@keyframes moving-arrow {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 2%;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+
+/******************** GALLERY ********************/
+
+#gallery {
+  padding: 3%;
+  padding-top: 7%;
+}
+
+.gallery-heading {
+  text-align: center;
+  margin-bottom: 6%;
+}
+
+.gallery-content {
+  margin: auto 0.5% 1% 1%;
+}
+
+.gallery-col {
+  margin-bottom: 1%;
+  outline: none;
+}
+
+.gallery-img {
+  width: 93% !important;
+  height: 93% !important;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.gallery-img:hover {
+  border: solid 3px #009bff;
+  transform: scale(1.1);
+}
+
+.modal-dialog {
+  max-width: 1000px;
+}
+
+.modal-header {
+  border: none;
+  margin: 0 !important;
+  padding-bottom: 0;
+}
+
+.modal-body {
+  height: 85vh;
+}
+
+.close-button {
+  outline: none !important;
+  color: white;
+}
+
+.close-button:hover {
+  color: #fff;
+}
+
+.modal-content {
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 84%);
+}
+
+.carousel-item img {
+  height: 80vh;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 10%;
+}
+
+
+/******************** ABOUT ********************/
+
+#about {
+  height: auto;
+  width: 100%;
+  padding: 3% 10%;
+  color: white;
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 84%);
+}
+
+.about-heading {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.about-text {
+  margin-top: 40px;
+  line-height: 2;
+  text-align: center;
+}
+
+.about-text p {
+  margin-top: 3%;
+}
+
+
+/******************** CONTACT ********************/
+
+#contact {
+  height: auto;
+  width: 100%;
+  padding: 3% 10%;
+}
+
+.contact-heading {
+  text-align: center;
+  margin: 2% auto 4%;
+}
+
+.fab {
+  transform: scale(0.9);
+  color: #00e0ff;
+}
+
+.fab:hover {
+  color: white;
+  transform: scale(1.2);
+}
+
+
+@media (max-width: 1200px) {
+
+  .welcome-page-subheading {
+    margin-top: 12rem;
+  }
+  .gallery-heading {
+    font-size: 2.3rem;
+  }
+
+}
+
+
+@media (max-width: 950px) {
+
+  .welcome-page-heading h1 {
+    font-size: 2.5rem;
+    margin-top: 6rem;
+  }
+  .welcome-page-heading h3 {
+    margin: 1.5rem 1rem auto;
+    font-size: 2rem;
+    font-family: 'Marck Script', cursive;
+  }
+  .welcome-page-subheading {
+    margin-top: 11.5rem;
+  }
+  .welcome-page-subheading p {
+    font-size: 1.2rem;
+  }
+  .fa-chevron-down {
+    transform: scale(0.8);
+  }
+  .gallery-heading {
+    margin: 3rem auto 4rem;
+  }
+  .gallery-img {
+    margin-left: 4%;
+  }
+  .gallery-img:hover {
+    border: solid 2px #009bff;
+    transform: scale(1.1);
+    cursor: default;
+  }
+  .contact-heading {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+  }
+  .fab {
+    transform: scale(0.7);
+  }
+  .fab:hover {
+    transform: scale(1);
+  }
+
+}
